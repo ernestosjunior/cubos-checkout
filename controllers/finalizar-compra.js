@@ -112,7 +112,7 @@ async function finalizarCompra(req, res) {
       id: pagamento.data.id,
       dataDaVenda: date,
       produtos: carrinho.produtos,
-      valorDaVenda: pagamento.amount,
+      valorDaVenda: carrinho.totalAPagar,
       boleto: pagamento.data.boleto_url,
     });
     salvarPedidos();

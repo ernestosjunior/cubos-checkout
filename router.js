@@ -8,6 +8,7 @@ const {
 } = require("./controllers/carrinho");
 const { finalizarCompra } = require("./controllers/finalizar-compra");
 const { listarProdutos } = require("./controllers/produtos");
+const { exibirRelatorio } = require("./controllers/relatorios");
 
 const router = express();
 
@@ -27,5 +28,8 @@ router.delete("/carrinho", limparCarrinho);
 
 //ROTAS FINALIZAR COMPRA
 router.post("/finalizar-compra", finalizarCompra);
+
+//ROTAS RELATORIOS
+router.get("/relatorios/vendas", exibirRelatorio);
 
 module.exports = { router };

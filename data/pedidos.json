@@ -1,7 +1,7 @@
 [
   {
-    "id": 12229797,
-    "dataDaVenda": "2021-05-12T01:40:02.687Z",
+    "id": 12236316,
+    "dataDaVenda": "2021-05-12T17:55:12.309Z",
     "produtos": [
       {
         "id": 1,
@@ -11,6 +11,7 @@
         "categoria": "Bazar"
       }
     ],
+    "valorDaVenda": 5338,
     "boleto": "https://pagar.me"
   }
 ]
