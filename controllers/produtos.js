@@ -1,6 +1,7 @@
 const fs = require("fs");
+const { lerProdutos } = require("../data/data");
 
-const { produtos } = JSON.parse(fs.readFileSync("./data/data.json").toString());
+const produtos = lerProdutos();
 
 async function listarProdutos(req, res) {
   const { categoria, precoInicial, precoFinal } = req.query;

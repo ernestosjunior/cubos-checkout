@@ -1,0 +1,16 @@
+[
+  {
+    "id": 12229797,
+    "dataDaVenda": "2021-05-12T01:40:02.687Z",
+    "produtos": [
+      {
+        "id": 1,
+        "quantidade": 2,
+        "nome": "Pipoca para Microondas Manteiga YOKI 50g",
+        "preco": 169,
+        "categoria": "Bazar"
+      }
+    ],
+    "boleto": "https://pagar.me"
+  }
+]
