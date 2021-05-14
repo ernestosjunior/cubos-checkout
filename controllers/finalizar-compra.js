@@ -117,13 +117,21 @@ async function finalizarCompra(req, res) {
     });
     salvarPedidos();
 
+    const dadosTransação = {
+      sucesso: true,
+      mensagem:
+        "Compra finalizada. Seguem os dados da transação e o link para pagamento do boleto.",
+      itens: carrinho.produtos,
+      subtotal: carrinho.subtotal,
+      frete: carrinho.valorDoFrete,
+      dataDeEntrega: addBusinessDays(date, 15),
+      totalAPagar: carrinho.totalAPagar,
+      boleto: pagamento.data.boleto_url,
+    };
+
     limparCarrinho();
 
-    res.status(200).json({
-      sucesso: true,
-      mensagem: "Compra finalizada.",
-      boleto: pagamento.data.boleto_url,
-    });
+    res.status(200).json(dadosTransação);
   } catch (error) {
     res.status(400).json({
       sucesso: false,

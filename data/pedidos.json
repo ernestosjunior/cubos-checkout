@@ -1,7 +1,7 @@
 [
   {
-    "id": 12236316,
-    "dataDaVenda": "2021-05-12T17:55:12.309Z",
+    "id": 12257498,
+    "dataDaVenda": "2021-05-14T18:11:35.268Z",
     "produtos": [
       {
         "id": 1,
@@ -9,9 +9,16 @@
         "nome": "Pipoca para Microondas Manteiga YOKI 50g",
         "preco": 169,
         "categoria": "Bazar"
+      },
+      {
+        "id": 3,
+        "quantidade": 1,
+        "nome": "Limpador Cif Multiuso 800g Em Pó",
+        "preco": 999,
+        "categoria": "Limpeza"
       }
     ],
-    "valorDaVenda": 5338,
+    "valorDaVenda": 6337,
     "boleto": "https://pagar.me"
   }
 ]
