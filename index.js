@@ -12,4 +12,4 @@ app.use(router);
 
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(require("./swagger.json")));
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
